@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Logowanie</title>
+</head>
+<body>
+    <h1>Logowanko</h1>
+    <div style="margin: auto; margin-top: 100px; width: 500px;">
+        <form method="post" th:action="@{/login}">
+            <input name="username" placeholder="Nazwa użytkownika">
+            <input name="password" placeholder="Hasło">
+            <input type="submit" value="Zaloguj">
+        </form>
+    </div>
+
+</body>
+</html>

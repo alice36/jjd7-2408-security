@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Security</title>
+</head>
+<body>
+    <h1>Hello Security</h1>
+    <form action="/przelew" method="post">
+        <input name="from"><br/>
+        <input name="to"><br/>
+        <input name="money" type="number"><br/>
+        <input type="submit" value="Wykonaj">
+    </form>
+
+    <form th:action="@{/logout}" method="post">
+        <input type="submit" value="Wyloguj">
+    </form>
+</body>
+</html>
